@@ -7,6 +7,8 @@ import { useForm } from "react-hook-form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
+import emailjs from "@emailjs/browser";
+
 import {
   Form,
   FormControl,
@@ -15,8 +17,22 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+
+import Confetti from "react-dom-confetti";
+
 import { Button } from "@/components/ui/button";
 import { Mail, Phone } from "lucide-react";
+import { useState } from "react";
+
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { DialogClose } from "@radix-ui/react-dialog";
 
 const formSchema = z.object({
   name: z
@@ -29,6 +45,7 @@ const formSchema = z.object({
 export default function Contact() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
+
     defaultValues: {
       email: "",
       name: "",
@@ -36,8 +53,30 @@ export default function Contact() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  const [isCompleted, setIsCompleted] = useState(false);
+
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    await emailjs
+      .send(
+        "service_ux42ffh",
+        "template_5iljmmn",
+        {
+          from_name: values.name,
+          message: values.message,
+          email: values.email,
+        },
+        "jXyy2ALGg-DjeNGDR"
+      )
+      .then(
+        (response) => {
+          console.log("Email enviado", response.status, response.text);
+          setIsCompleted(true);
+          form.reset();
+        },
+        (err) => {
+          console.log("ERRO", err);
+        }
+      );
   }
 
   return (
@@ -56,25 +95,25 @@ export default function Contact() {
           discutir seus projetos e ideias. Estou ansioso para ouvir você!
         </p>
 
-        <div className=" mt-10 sm:flex gap-8 md:gap-0 justify-center  md:flex-col">
-          <div className="flex items-center mb-4 ">
-            <div className="bg-gray-300 dark:bg-gray-800 p-3 rounded-full me-3">
+        <div className=" mt-10 py-5 sm:flex gap-8 md:gap-0 justify-center  md:flex-col">
+          <div className="flex  flex-col md:flex-row items-center mb-4 ">
+            <div className="bg-gray-300 mb-2 md:mb-0 dark:bg-gray-800 p-3 rounded-full me-3">
               <Phone size={18} className=" " />
             </div>
             <div className="flex flex-col">
-              <span className="font-medium text-left dark:text-white">
+              <span className="font-medium text-center  md:text-left dark:text-white">
                 Telefone
               </span>
               <span className="text-sm text-left">999 999 999 / 912345678</span>
             </div>
           </div>
 
-          <div className="flex items-center">
-            <div className="bg-gray-300 dark:bg-gray-800 p-3 rounded-full me-3">
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="bg-gray-300 mb-2 md:mb-0 dark:bg-gray-800 p-3 rounded-full me-3">
               <Mail size={18} />
             </div>
             <div className="flex flex-col">
-              <span className="font-medium text-left  dark:text-white">
+              <span className="font-medium text-center  md:text-left  dark:text-white">
                 Email
               </span>
               <span className="text-sm">ivodasilvapedro@gmail.com</span>
@@ -129,9 +168,60 @@ export default function Contact() {
                 </FormItem>
               )}
             />
-            <Button type="submit" className="text-white font-medium w-full p-5">
-              Enviar
-            </Button>
+
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button
+                  variant="default"
+                  type="submit"
+                  className="text-white font-medium w-full p-5"
+                >
+                  Enviar
+                </Button>
+              </DialogTrigger>
+
+              <DialogContent className="sm:max-w[425px]">
+                <Confetti
+                  active={isCompleted}
+                  config={{
+                    spread: 90,
+                    elementCount: 200,
+                  }}
+                />
+                {isCompleted ? (
+                  <>
+                    <DialogHeader>
+                      <DialogTitle>Parabéns! 🎉</DialogTitle>
+                      <DialogDescription>
+                        Obrigado, seu email foi recebido e responderei em breve.
+                      </DialogDescription>
+                    </DialogHeader>
+                    <DialogClose>
+                      <Button
+                        variant="outline"
+                        onClick={() => {
+                          setIsCompleted(false);
+                          form.reset();
+                        }}
+                      >
+                        Fechar
+                      </Button>
+                    </DialogClose>
+                  </>
+                ) : (
+                  <>
+                    <DialogHeader>
+                      <DialogTitle>Erro!</DialogTitle>
+                      <DialogDescription>
+                        Desculpe aconteceu um erro ao enviar a sua mensagem,
+                        tente novamente mais tarde ou contacte-me por uma outra
+                        via!
+                      </DialogDescription>
+                    </DialogHeader>
+                  </>
+                )}
+              </DialogContent>
+            </Dialog>
           </form>
         </Form>
       </div>
