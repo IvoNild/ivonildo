@@ -54,8 +54,12 @@ export default function Contact() {
   });
 
   const [isCompleted, setIsCompleted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setIsError] = useState(false);
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsLoading(true);
+
     await emailjs
       .send(
         "service_ux42ffh",
@@ -72,11 +76,14 @@ export default function Contact() {
           console.log("Email enviado", response.status, response.text);
           setIsCompleted(true);
           form.reset();
+          setIsError(false);
         },
         (err) => {
           console.log("ERRO", err);
+          setIsError(true);
         }
-      );
+      )
+      .finally(() => setIsLoading(false));
   }
 
   return (
@@ -180,7 +187,7 @@ export default function Contact() {
                 </Button>
               </DialogTrigger>
 
-              <DialogContent className="sm:max-w[425px]">
+              <DialogContent className=" max-w-[95%] sm:max-w-[425px]">
                 <Confetti
                   active={isCompleted}
                   config={{
@@ -188,6 +195,7 @@ export default function Contact() {
                     elementCount: 200,
                   }}
                 />
+
                 {isCompleted ? (
                   <>
                     <DialogHeader>
@@ -210,14 +218,20 @@ export default function Contact() {
                   </>
                 ) : (
                   <>
-                    <DialogHeader>
-                      <DialogTitle>Erro!</DialogTitle>
-                      <DialogDescription>
-                        Desculpe aconteceu um erro ao enviar a sua mensagem,
-                        tente novamente mais tarde ou contacte-me por uma outra
-                        via!
-                      </DialogDescription>
-                    </DialogHeader>
+                    {error && (
+                      <DialogHeader>
+                        <DialogTitle>Erro!</DialogTitle>
+                        <DialogDescription>
+                          Desculpe aconteceu um erro ao enviar a sua mensagem,
+                          tente novamente mais tarde ou contacte-me por uma
+                          outra via!
+                        </DialogDescription>
+                      </DialogHeader>
+                    )}
+
+                    {isLoading && (
+                      <span className="text-green-500">Enviando ...</span>
+                    )}
                   </>
                 )}
               </DialogContent>

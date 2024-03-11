@@ -4,14 +4,16 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Link as LinkIcon, Github } from "lucide-react";
 import Link from "next/link";
 
+import { URL } from "url";
+
 type ProjectCardProps = {
   img: string;
   title: string;
   text: string;
   stacks: string[];
   projectType: "app" | "web";
-  linkProject?: string;
-  linkGitHub?: string;
+  linkProject: URL;
+  linkGitHub: URL;
 };
 
 const ProjectCardList: ProjectCardProps[] = [
@@ -21,6 +23,8 @@ const ProjectCardList: ProjectCardProps[] = [
     text: "This sample project description random thigs are here in description this is sample projecct ipsum generator dumpy content",
     stacks: ["Html5", "Css3", "JavaScript"],
     projectType: "web",
+    linkProject: new URL("https://fiber-started-files.vercel.app/"),
+    linkGitHub: new URL("https://github.com/IvoNild/FiberStartedFiles"),
   },
   {
     img: "/edie.jpg",
@@ -28,6 +32,8 @@ const ProjectCardList: ProjectCardProps[] = [
     text: "This sample project description random thigs are here in description this is sample projecct ipsum generator dumpy content",
     stacks: ["Html5", "Css3", "JavaScript"],
     projectType: "web",
+    linkProject: new URL("https://edie-eta.vercel.app/"),
+    linkGitHub: new URL("https://github.com/IvoNild/Edie"),
   },
   {
     img: "/evoting.jpeg",
@@ -35,6 +41,8 @@ const ProjectCardList: ProjectCardProps[] = [
     text: "This sample project description random thigs are here in description this is sample projecct ipsum generator dumpy content",
     stacks: ["React Native", "Expo", "TypeScript"],
     projectType: "app",
+    linkProject: new URL("https://edie-eta.vercel.app/"),
+    linkGitHub: new URL("https://github.com/IvoNild/elections"),
   },
   {
     img: "/githubjobs.png",
@@ -42,6 +50,8 @@ const ProjectCardList: ProjectCardProps[] = [
     text: "This sample project description random thigs are here in description this is sample projecct ipsum generator dumpy content",
     stacks: ["Html5", "Css3", "JavaScript"],
     projectType: "web",
+    linkProject: new URL("https://github-jobs-ebon.vercel.app/"),
+    linkGitHub: new URL("https://github.com/IvoNild/githubJobs"),
   },
 ];
 const webProjects: ProjectCardProps[] = ProjectCardList.filter(
@@ -88,6 +98,8 @@ export default function Projects() {
                   text={item.text}
                   stacks={item.stacks}
                   projectType={item.projectType}
+                  linkProject={item.linkProject}
+                  linkGitHub={item.linkGitHub}
                   key={index}
                 />
               ))}
@@ -103,6 +115,8 @@ export default function Projects() {
                   text={item.text}
                   stacks={item.stacks}
                   projectType={item.projectType}
+                  linkProject={item.linkProject}
+                  linkGitHub={item.linkGitHub}
                   key={index}
                 />
               ))}
@@ -117,6 +131,8 @@ export default function Projects() {
                   text={item.text}
                   stacks={item.stacks}
                   projectType={item.projectType}
+                  linkProject={item.linkProject}
+                  linkGitHub={item.linkGitHub}
                   key={index}
                 />
               ))}
@@ -165,7 +181,11 @@ function ProjectCard({
         </div>
 
         <div className="flex justify-between">
-          <Link href="#" className="flex items-center text-xs underline gap-1">
+          <Link
+            target="_blank"
+            href={linkProject}
+            className="flex items-center text-xs underline gap-1"
+          >
             <LinkIcon size={14} />
             {projectType === "web" ? (
               <span> Ver site</span>
@@ -174,7 +194,11 @@ function ProjectCard({
             )}
           </Link>
 
-          <Link href="#" className="flex items-center text-xs underline gap-1">
+          <Link
+            target="_blank"
+            href={linkGitHub}
+            className="flex items-center text-xs underline gap-1"
+          >
             <Github size={14} />
             <span>Ver código</span>
           </Link>
