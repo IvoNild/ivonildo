@@ -16,7 +16,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Button } from "@/components/ui/button";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 const formSchema = z.object({
   name: z
@@ -59,7 +59,7 @@ export default function Contact() {
         <div className=" mt-10 sm:flex gap-8 md:gap-0 justify-center  md:flex-col">
           <div className="flex items-center mb-4 ">
             <div className="bg-gray-300 dark:bg-gray-800 p-3 rounded-full me-3">
-              <MapPin size={18} className=" " />
+              <Phone size={18} className=" " />
             </div>
             <div className="flex flex-col">
               <span className="font-medium text-left dark:text-white">
