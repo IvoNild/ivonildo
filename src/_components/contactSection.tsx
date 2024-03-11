@@ -43,7 +43,7 @@ export default function Contact() {
   return (
     <section
       id="contacts"
-      className="container  lg:px-0 max-w-[64rem] py-8 md:grid md:grid-cols-2 md:py-12 lg:py-24"
+      className="container  lg:px-0 max-w-[64rem] py-24 md:grid md:grid-cols-2 md:py-12 lg:py-24"
     >
       <div className="flex md:pe-10   flex-col space-y-4 text-center md:text-left">
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-5xl md: ">
