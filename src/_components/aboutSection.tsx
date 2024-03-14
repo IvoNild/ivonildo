@@ -44,17 +44,33 @@ export default function AboutSection() {
             a oportunidade de aprimorar minhas habilidades e explorar novas
             tecnologias. Com uma base sólida e uma mentalidade voltada para a
             aprendizagem contínua, estou sempre em busca de me manter atualizado
-            com as últimas tendências e práticas da indústria. A combinação entre
-            minha experiência em desenvolvimento e meu interesse pelo design me
-            permite abordar projetos de forma holística, garantindo tanto a
-            funcionalidade quanto a beleza em cada detalhe.
+            com as últimas tendências e práticas da indústria. A combinação
+            entre minha experiência em desenvolvimento e meu interesse pelo
+            design me permite abordar projetos de forma holística, garantindo
+            tanto a funcionalidade quanto a beleza em cada detalhe.
           </p>
 
           <div className="mt-6 flex justify-center gap-6 lg:justify-start">
-            <SocialLink href="#" icon={Instagram} />
-            <SocialLink href="#" icon={Github} />
-            <SocialLink href="#" icon={Linkedin} />
-            <SocialLink href="#" icon={Facebook} />
+            <SocialLink
+              target="_blank"
+              href="https://www.instagram.com/ivonildo_dasilva/"
+              icon={Instagram}
+            />
+            <SocialLink
+              target="_blank"
+              href="https://github.com/IvoNild"
+              icon={Github}
+            />
+            <SocialLink
+              target="_blank"
+              href="https://www.linkedin.com/me?trk=p_mwlite_feed_updates-secondary_nav"
+              icon={Linkedin}
+            />
+            <SocialLink
+              target="_blank"
+              href="https://m.facebook.com/profile.php/?id=100005121480354"
+              icon={Facebook}
+            />
           </div>
         </div>
       </div>
