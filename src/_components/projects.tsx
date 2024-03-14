@@ -41,7 +41,7 @@ const ProjectCardList: ProjectCardProps[] = [
     text: "Este é um simples projecto criado por hobbie, a fim de testar as minhas capacidades e meus aprendizados.",
     stacks: ["React Native", "Expo", "TypeScript"],
     projectType: "app",
-    linkProject: new URL("https://edie-eta.vercel.app/"),
+    linkProject: new URL("#"),
     linkGitHub: new URL("https://github.com/IvoNild/elections"),
   },
   {
