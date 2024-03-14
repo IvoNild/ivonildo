@@ -38,7 +38,7 @@ const ProjectCardList: ProjectCardProps[] = [
   {
     img: "/evoting.jpeg",
     title: "Evoting",
-    text: "Este é um simples projecto criado por hobbie, a fim de testar as minhas capacidades e meus aprendizados.",
+    text: "Este é um  projecto da faculdade, criado a fim de ser apresentado como trabalho da cadeira de Engenharia de software, um projecto que lna qual obtive 20 valores.",
     stacks: ["React Native", "Expo", "TypeScript"],
     projectType: "app",
     linkProject: new URL("https://ivonildo.vercel.app/"),
