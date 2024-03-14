@@ -63,7 +63,7 @@ export default function AboutSection() {
             />
             <SocialLink
               target="_blank"
-              href="https://www.linkedin.com/me?trk=p_mwlite_feed_updates-secondary_nav"
+              href="https://www.linkedin.com/in/ivo-da-silva-pedro-37026b217/"
               icon={Linkedin}
             />
             <SocialLink
