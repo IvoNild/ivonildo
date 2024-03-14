@@ -20,7 +20,7 @@ const ProjectCardList: ProjectCardProps[] = [
   {
     img: "/FiberStarterFiles.png",
     title: "Fiber Starter Files",
-    text: "This sample project description random thigs are here in description this is sample projecct ipsum generator dumpy content",
+    text: "Este é um simples projecto criado por hobbie, a fim de testar as minhas capacidades e meus aprendizados.",
     stacks: ["Html5", "Css3", "JavaScript"],
     projectType: "web",
     linkProject: new URL("https://fiber-started-files.vercel.app/"),
@@ -29,7 +29,7 @@ const ProjectCardList: ProjectCardProps[] = [
   {
     img: "/edie.jpg",
     title: "Edie",
-    text: "This sample project description random thigs are here in description this is sample projecct ipsum generator dumpy content",
+    text: "Este é um simples projecto criado por hobbie, a fim de testar as minhas capacidades e meus aprendizados.",
     stacks: ["Html5", "Css3", "JavaScript"],
     projectType: "web",
     linkProject: new URL("https://edie-eta.vercel.app/"),
@@ -38,7 +38,7 @@ const ProjectCardList: ProjectCardProps[] = [
   {
     img: "/evoting.jpeg",
     title: "Evoting",
-    text: "This sample project description random thigs are here in description this is sample projecct ipsum generator dumpy content",
+    text: "Este é um simples projecto criado por hobbie, a fim de testar as minhas capacidades e meus aprendizados.",
     stacks: ["React Native", "Expo", "TypeScript"],
     projectType: "app",
     linkProject: new URL("https://edie-eta.vercel.app/"),
@@ -47,7 +47,7 @@ const ProjectCardList: ProjectCardProps[] = [
   {
     img: "/githubjobs.png",
     title: "Github Jobs",
-    text: "This sample project description random thigs are here in description this is sample projecct ipsum generator dumpy content",
+    text: "Este é um simples projecto criado por hobbie, a fim de testar as minhas capacidades e meus aprendizados.",
     stacks: ["Html5", "Css3", "JavaScript"],
     projectType: "web",
     linkProject: new URL("https://github-jobs-ebon.vercel.app/"),
