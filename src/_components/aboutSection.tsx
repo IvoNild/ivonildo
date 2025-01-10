@@ -38,7 +38,7 @@ export default function AboutSection() {
           </h1>
           <p className="mt-6 text-base text-center lg:text-left text-muted-foreground">
             Desenvolvedor apaixonado por criar experiências incríveis para a web
-            e dispositivos móveis. Desde o ensino médio, mergulhei no mundo do
+            e dispositivos móveis. Desde muito cedo, mergulhei no mundo do
             desenvolvimento, sendo autodidata e absorvendo conhecimento de forma
             constante. Atualmente, sou finalista do curso de Engenharia de Informática, onde tive
             a oportunidade de aprimorar minhas habilidades e explorar novas
