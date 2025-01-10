@@ -111,7 +111,7 @@ export default function Contact() {
               <span className="font-medium text-center  md:text-left dark:text-white">
                 Telefone
               </span>
-              <span className="text-sm text-left">921 734 927  / 955 612 804</span>
+              <span className="text-sm text-left">955 612 804</span>
             </div>
           </div>
 

@@ -21,7 +21,7 @@ export default function AboutSection() {
         <div className="lg:pl-20 flex justify-center">
           <div className="max-w-xs px-2 lg:max-w-none">
             <Image
-              src="/profile.jpeg"
+              src="/profile.jpg"
               alt="Ivo Pedro"
               width={800}
               height={800}

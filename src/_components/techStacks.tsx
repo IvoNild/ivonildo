@@ -34,15 +34,15 @@ const techList: techCardProps[] = [
     text: "Interatividade, manipulação de eventos e comportamento do usuário.",
   },
   {
-    title: "React.js",
+    title: "React",
     Icon: Reactjs,
     text: "Componentização e gerenciamento de estado eficiente.",
   },
-  {
-    title: "Next.js",
-    Icon: Nextjs,
-    text: "Renderização server-side, roteamento e otimização de desempenho.",
-  },
+  // {
+  //   title: "Next.js",
+  //   Icon: Nextjs,
+  //   text: "Renderização server-side, roteamento e otimização de desempenho.",
+  // },
   {
     title: "Tailwind Css",
     Icon: TailwindCss,
