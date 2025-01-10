@@ -40,7 +40,7 @@ export default function AboutSection() {
             Desenvolvedor apaixonado por criar experiências incríveis para a web
             e dispositivos móveis. Desde o ensino médio, mergulhei no mundo do
             desenvolvimento, sendo autodidata e absorvendo conhecimento de forma
-            constante. Atualmente, estou no último ano da faculdade, onde tenho
+            constante. Atualmente, sou finalista do curso de Engenharia de Informática, onde tive
             a oportunidade de aprimorar minhas habilidades e explorar novas
             tecnologias. Com uma base sólida e uma mentalidade voltada para a
             aprendizagem contínua, estou sempre em busca de me manter atualizado
