@@ -28,40 +28,44 @@ const techList: techCardProps[] = [
     Icon: Css3,
     text: "Estilização e design, controle de layout e apresentação visual.",
   },
+
   {
     title: "JavaScript",
     Icon: JavaScript,
     text: "Interatividade, manipulação de eventos e comportamento do usuário.",
-  },
-  {
-    title: "React",
-    Icon: Reactjs,
-    text: "Componentização e gerenciamento de estado eficiente.",
   },
   // {
   //   title: "Next.js",
   //   Icon: Nextjs,
   //   text: "Renderização server-side, roteamento e otimização de desempenho.",
   // },
+
   {
-    title: "Tailwind Css",
-    Icon: TailwindCss,
-    text: "Estilização rápida e consistente com classes pré-definidas.",
+    title: "React",
+    Icon: Reactjs,
+    text: "Componentização e gerenciamento de estado eficiente.",
   },
   {
     title: "React Native(Expo)",
     Icon: Expo,
     text: " Criação de aplicativos móveis multiplataforma, com interfaces nativas.",
   },
-  {
-    title: "Styled-components",
-    Icon: StyledComponent,
-    text: " CSS-in-JS para uma experiência de desenvolvimento simplificada.",
-  },
+
   {
     title: "TypeScript",
     Icon: TypeScript,
     text: "Tipagem estática opcional, interfaces e tipos avançados.",
+  },
+  {
+    title: "Tailwind Css",
+    Icon: TailwindCss,
+    text: "Estilização rápida e consistente com classes pré-definidas.",
+  },
+
+  {
+    title: "Styled-components",
+    Icon: StyledComponent,
+    text: " CSS-in-JS para uma experiência de desenvolvimento simplificada.",
   },
   {
     title: "Git",
