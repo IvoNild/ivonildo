@@ -5,13 +5,14 @@ import { Link as LinkIcon, Github } from "lucide-react";
 import Link from "next/link";
 
 import { URL } from "url";
+import { prototype } from "events";
 
 type ProjectCardProps = {
   img: string;
   title: string;
   text: string;
   stacks: string[];
-  projectType: "app" | "web";
+  projectType: "app" | "web" | "prototype";
   linkProject: URL;
   linkGitHub: URL;
 };
@@ -53,6 +54,17 @@ const ProjectCardList: ProjectCardProps[] = [
     linkProject: new URL("https://github-jobs-ebon.vercel.app/"),
     linkGitHub: new URL("https://github.com/IvoNild/githubJobs"),
   },
+  {
+    img: "/farmappDesign.png",
+    title: "FarmApp",
+    text: "Este é um protótipo para um aplicativo direcionado a uma farmácia, na qual os clientes podem comprar ou encomendar produtos.",
+    stacks: ["Figma"],
+    projectType: "prototype",
+    linkProject: new URL(
+      "https://www.figma.com/design/p9AGGKg5UcTIJQAZ684Itz/FarmApp?node-id=1-2&p=f&t=g330mIOH7E36cxSJ-0"
+    ),
+    linkGitHub: new URL("https://github.com/IvoNild/githubJobs"),
+  },
 ];
 const webProjects: ProjectCardProps[] = ProjectCardList.filter(
   (project) => project.projectType === "web"
@@ -60,6 +72,10 @@ const webProjects: ProjectCardProps[] = ProjectCardList.filter(
 
 const appProjects: ProjectCardProps[] = ProjectCardList.filter(
   (project) => project.projectType === "app"
+);
+
+const prototypeProjects: ProjectCardProps[] = ProjectCardList.filter(
+  (project) => project.projectType === "prototype"
 );
 
 export default function Projects() {
@@ -86,6 +102,7 @@ export default function Projects() {
               <TabsTrigger value="all">Todos</TabsTrigger>
               <TabsTrigger value="web">Web</TabsTrigger>
               <TabsTrigger value="app">App</TabsTrigger>
+              <TabsTrigger value="prototype">Protótipo</TabsTrigger>
             </TabsList>
           </div>
 
@@ -125,6 +142,23 @@ export default function Projects() {
           <TabsContent value="app">
             <div className="grid gap-4 sm:grid-cols-2  lg:grid-cols-3 ">
               {appProjects.map((item, index) => (
+                <ProjectCard
+                  img={item.img}
+                  title={item.title}
+                  text={item.text}
+                  stacks={item.stacks}
+                  projectType={item.projectType}
+                  linkProject={item.linkProject}
+                  linkGitHub={item.linkGitHub}
+                  key={index}
+                />
+              ))}
+            </div>
+          </TabsContent>
+
+          <TabsContent value="prototype">
+            <div className="grid gap-4 sm:grid-cols-2  lg:grid-cols-3 ">
+              {prototypeProjects.map((item, index) => (
                 <ProjectCard
                   img={item.img}
                   title={item.title}
@@ -187,21 +221,23 @@ function ProjectCard({
             className="flex items-center text-xs underline gap-1"
           >
             <LinkIcon size={14} />
-            {projectType === "web" ? (
-              <span> Ver site</span>
-            ) : (
-              <span> Baixar app</span>
-            )}
+
+            {projectType === "web" && <span> Ver site</span>}
+            {projectType === "app" && <span> Baixar app</span>}
+            {projectType === "prototype" && <span> Ver protótipo</span>}
           </Link>
 
-          <Link
-            target="_blank"
-            href={linkGitHub}
-            className="flex items-center text-xs underline gap-1"
-          >
-            <Github size={14} />
-            <span>Ver código</span>
-          </Link>
+          {projectType !== "prototype" && (
+            <Link
+              target="_blank"
+              href={linkGitHub}
+              className="flex items-center text-xs underline gap-1"
+            >
+              <Github size={14} />
+
+              <span>Ver código</span>
+            </Link>
+          )}
         </div>
       </div>
     </div>

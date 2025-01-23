@@ -10,6 +10,7 @@ import Git from "@/_svgStack/git";
 import TypeScript from "@/_svgStack/typeScript";
 
 import { ComponentType } from "react";
+import { FigmaLogoIcon } from "@radix-ui/react-icons";
 
 type techCardProps = {
   title: string;
@@ -66,6 +67,11 @@ const techList: techCardProps[] = [
     title: "Styled-components",
     Icon: StyledComponent,
     text: " CSS-in-JS para uma experiência de desenvolvimento simplificada.",
+  },
+  {
+    title: "Figma",
+    Icon: FigmaLogoIcon,
+    text: "Design de protótipos e interfaces intuitivas e amigáveis.",
   },
   {
     title: "Git",
