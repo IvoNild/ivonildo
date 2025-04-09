@@ -40,14 +40,17 @@ export default function AboutSection() {
             Desenvolvedor apaixonado por criar experiências incríveis para a web
             e dispositivos móveis. Desde muito cedo, mergulhei no mundo do
             desenvolvimento, sendo autodidata e absorvendo conhecimento de forma
-            constante. Atualmente, sou finalista do curso de Engenharia de Informática, onde tive
-            a oportunidade de aprimorar minhas habilidades e explorar novas
-            tecnologias. Com uma base sólida e uma mentalidade voltada para a
-            aprendizagem contínua, estou sempre em busca de me manter atualizado
-            com as últimas tendências e práticas da indústria. A combinação
-            entre minha experiência em desenvolvimento e meu interesse pelo
-            design me permite abordar projetos de forma holística, garantindo
-            tanto a funcionalidade quanto a beleza em cada detalhe.
+            constante. Atualmente, sou finalista do curso de Engenharia de
+            Informática, onde tive a oportunidade de aprimorar minhas
+            habilidades e explorar novas tecnologias. Com uma base sólida e uma
+            mentalidade voltada para a aprendizagem contínua, estou sempre em
+            busca de me manter atualizado com as últimas tendências e práticas
+            da indústria. Além do desenvolvimento, também me dediquei ao estudo
+            de UI/UX Design, o que me permite criar interfaces atraentes e
+            experiências de usuário intuitivas. A combinação entre minha
+            experiência em desenvolvimento e meu interesse por design me permite
+            abordar projetos de forma holística, garantindo tanto a
+            funcionalidade quanto a beleza em cada detalhe.
           </p>
 
           <div className="mt-6 flex justify-center gap-6 lg:justify-start">

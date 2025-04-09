@@ -43,7 +43,7 @@ export function IntroSection() {
         <div className="space-x-4">
           <a
           target="_blank"
-            href="/Ivo Da Silva PEDRO.pdf.pdf"
+            href="/Ivo_Pedro.pdf"
             className="bg-primary text-white transition-all ease-in rounded py-2 px-4 md:text-xl shadow-lg hover:shadow"
           >
             Baixar CV
