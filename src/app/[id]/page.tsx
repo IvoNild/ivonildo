@@ -50,9 +50,11 @@ const List = ({ list }: { list: string[] }) => {
 };
  
 
-export default function ProjectDetails({ params }: { params: { id: string } }) {
+export default async function ProjectDetails(props: { params: Promise<{ id: string }> }) {
 
-  const projectId = parseInt(params.id);
+  const {id} = await props.params
+
+  const projectId = parseInt(id);
   // const project = projectsData.find((p) => p.id === projectId);
   // const relatedProjects = projectsData
   //   .filter((p) => p.id !== projectId)
