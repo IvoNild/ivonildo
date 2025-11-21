@@ -23,12 +23,12 @@ const Paragraph = ({ text }: { text: string }) => {
   );
 };
 
-interface Paragraph {
+interface ParagraphData  {
   title: string;
   text: string;
 }
 
-function ParagraphsSection({ title, text }: Paragraph) {
+function ParagraphsSection({ title, text }: ParagraphData) {
   return (
     <div className="">
       <Title title={title} />
@@ -61,6 +61,8 @@ export default function ProjectDetails({ params }: Props) {
   // const relatedProjects = projectsData
   //   .filter((p) => p.id !== projectId)
   //   .slice(0, 4);
+
+
 
   const project = allProjects.find((p) => p.id === projectId)
   // const relatedProjects = allProjects.filter((p) => p.id !== projectId).slice(0, 4)
