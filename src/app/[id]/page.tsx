@@ -49,11 +49,6 @@ const List = ({ list }: { list: string[] }) => {
   );
 };
 
-interface Props {
-  params: {
-    id: string;
-  };
-}
 
 export default function ProjectDetails({ params }: { params: { id: string } }) {
 
