@@ -55,7 +55,8 @@ interface Props {
   };
 }
 
-export default function ProjectDetails({ params }: Props) {
+export default function ProjectDetails({ params }: { params: { id: string } }) {
+
   const projectId = parseInt(params.id);
   // const project = projectsData.find((p) => p.id === projectId);
   // const relatedProjects = projectsData
