@@ -2,7 +2,7 @@ import Link from "next/link";
 import Section from "./Section";
 import {
   FaBook,
-  FaBookOpen,
+  // FaBookOpen,
   FaCheckSquare,
   FaFileDownload,
   FaUserGraduate,

@@ -2,10 +2,10 @@ import colors from "../colors";
 import {
   FaFilePowerpoint,
   FaDatabase,
-  FaGithub,
+  // FaGithub,
   FaGitAlt,
   FaFigma,
-  FaPython,
+  // FaPython,
   FaFileCode,
   FaFileInvoice,
   FaReact

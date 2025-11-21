@@ -65,7 +65,7 @@ export default function ProjectDetails({ params }: Props) {
 
 
   const project = allProjects.find((p) => p.id === projectId)
-  const relatedProjects = allProjects.filter((p) => p.id !== projectId).slice(0, 4)
+  // const relatedProjects = allProjects.filter((p) => p.id !== projectId).slice(0, 4)
 
   if (!project) {
     return (

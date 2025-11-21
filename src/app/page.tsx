@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import Projects from "./components/Projects";
 import TechnologySkill from "./components/TechnologySkill";
-import { projectsData } from "./data/projects";
+// import { projectsData } from "./data/projects";
 
 export default function Home() {
   return (
