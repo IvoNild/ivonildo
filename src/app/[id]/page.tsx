@@ -48,7 +48,7 @@ const List = ({ list }: { list: string[] }) => {
     </ul>
   );
 };
-
+ 
 
 export default function ProjectDetails({ params }: { params: { id: string } }) {
 
