@@ -87,7 +87,7 @@ export default function Education() {
           institution="ITEL - Instituto Nacional de Telecomunicações"
           course="Técnico Médio de Informática"
           period="2015-2017"
-          certificateUrl="/docs/Certificado - Ensino Médio.pdf" // Para arquivos locais
+          // certificateUrl="/docs/Certificado - Ensino Médio.pdf" // Para arquivos locais
         />
 
         <EducationCard
@@ -96,7 +96,7 @@ export default function Education() {
           institution="INSUTEC - Instituto Superior Politécnico de Ciências e Tecnologia"
           course="Eng. Informática e Sistemas de Informação"
           period="2019-2025"
-          certificateUrl="/docs/Certificado_Ivo_Da_Silva_Pedro.pdf"
+          // certificateUrl="/docs/Certificado_Ivo_Da_Silva_Pedro.pdf"
         />
 
         <EducationCard
