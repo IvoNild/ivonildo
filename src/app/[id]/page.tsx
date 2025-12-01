@@ -4,6 +4,8 @@ import { FaArrowLeft, FaChartPie, FaFolder } from "react-icons/fa";
 import Link from "next/link";
 import colors from "../colors";
 import Projects from "../components/Projects";
+import ProjectImageCarousel from  "../components/ProjectImageCarousel";
+
 
 const allProjects = Object.values(projectsData).flat()
 
@@ -23,7 +25,7 @@ const Paragraph = ({ text }: { text: string }) => {
   );
 };
 
-interface ParagraphData  {
+interface ParagraphData {
   title: string;
   text: string;
 }
@@ -48,11 +50,11 @@ const List = ({ list }: { list: string[] }) => {
     </ul>
   );
 };
- 
+
 
 export default async function ProjectDetails(props: { params: Promise<{ id: string }> }) {
 
-  const {id} = await props.params
+  const { id } = await props.params
 
   const projectId = parseInt(id);
   // const project = projectsData.find((p) => p.id === projectId);
@@ -89,14 +91,16 @@ export default async function ProjectDetails(props: { params: Promise<{ id: stri
           Voltar para projectos
         </Link>
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-          <div className="relative w-full aspect-video max-h-[500px]">
+          {/* <div className="relative w-full aspect-video max-h-[500px]">
             <Image
-              src={`/imgProjects/${project.img}`}
+              src={`/${project.img}`}
               alt={project.title}
               fill
               className="object-cover"
             />
-          </div>
+          </div> */}
+
+          <ProjectImageCarousel images={project.img} title={project.title} />
 
           <div className="p-6 md:p-8">
             <h1 className="  text-[18px] font-bold text-gray-900 mb-2 md:text-[30px] lg:text-[36px]">
@@ -179,7 +183,7 @@ export default async function ProjectDetails(props: { params: Promise<{ id: stri
       </div>
 
       <div className="mt-16">
-        <Projects/>
+        <Projects />
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 export interface ProjectDetails {
   id: number;
-  img: string;
+  img: string[];
   title: string;
   description: string;
   skills: string[];

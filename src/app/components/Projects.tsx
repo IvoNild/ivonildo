@@ -26,7 +26,7 @@ function ProjectCard({
     >
       <div className="w-full h-[200px]">
         <Image
-          src={`/imgProjects/${img}`}
+          src={`/${img[0]}`}
           alt={title}
           width={300}
           height={200}
