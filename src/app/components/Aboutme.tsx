@@ -58,8 +58,8 @@ export default function Aboutme() {
       <h1 className="text-[30px] text-white md:text-[50px]">
         <Typewriter
           texts={[
+            "Engenheiro Informático",
             "Analista De Dados",
-            "Desenvolvedor Front-End",
             "Design de Interfaces"
           ]}
         />
@@ -69,19 +69,20 @@ export default function Aboutme() {
         <IconListItem icon={FaDatabase} text="SQL" />
         <IconListItem icon={AiFillFileExcel} text="Excel" />
 
+        <IconListItem icon={FaGitAlt} text="Git" />
+        <IconListItem icon={FaFigma} text="Figma" />
+
         <IconListItem icon={FaReact} text="React JS" />
         <IconListItem icon={TbBrandReactNative} text="React Native" />
         <IconListItem icon={RiTailwindCssFill} text="TailwindCss" />
 
-        <IconListItem icon={FaGitAlt} text="Git" />
-        <IconListItem icon={FaFigma} text="Figma" />
       </ul>
 
       <div className="w-full flex justify-center">
         <p className="text-white text-[14px] pt-8 px-10 md:max-w-[1000px] md:pt-5 md:text-[15px]">
-          Sou Engenheiro Informático apaixonado por construir soluções que unem tecnologia e design. No meu dia-a-dia trabalho entre o desenvolvimento web, a criação de interfaces e a análise de informação, dando vida a aplicações e dashboards que contam histórias claras e relevantes.
-          Do front-end ao mobile, do SQL ao Power BI, e agora explorando o mundo das redes de computadores, gosto de transformar desafios em soluções funcionais, intuitivos e visualmente apelativos.
-          Este portfólio apresenta uma parte do meu percurso — projectos que combinam criatividade, pensamento analítico e engenharia ao serviço de boas soluções.
+          Sou Engenheiro Informático com uma trajectória que combina tecnologia, design e análise. Comecei no desenvolvimento front-end e na criação de interfaces, áreas que me ensinaram a pensar a experiência do utilizador, estruturar processos e transformar conceitos abstractos em produtos funcionais.
+          Com o tempo, evoluí naturalmente para a Análise de Dados e Business Intelligence, onde encontrei a intersecção perfeita entre lógica, criatividade e impacto real. Hoje aplico competências técnicas e analíticas para transformar dados brutos em informação relevante — seja através de dashboards claros, modelos bem estruturados ou relatórios que apoiam decisões estratégicas.
+          Trabalho com ferramentas como Power BI, SQL, Excel e Figma, aliando pensamento visual à interpretação rigorosa de dados. Acredito que uma boa análise não termina na métrica: ela começa na pergunta certa e concretiza-se na forma como os insights são comunicados.
         </p>
       </div>
 
