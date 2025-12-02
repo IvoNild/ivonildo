@@ -1,9 +1,6 @@
 import { projectsData } from "../data/projects";
-import Image from "next/image";
-import { FaArrowLeft, FaChartPie, FaFolder } from "react-icons/fa";
+import { FaArrowLeft, FaFolder } from "react-icons/fa";
 import Link from "next/link";
-import colors from "../colors";
-import Projects from "../components/Projects";
 import ProjectImageCarousel from  "../components/ProjectImageCarousel";
 
 
