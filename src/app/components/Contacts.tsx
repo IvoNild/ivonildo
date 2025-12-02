@@ -14,8 +14,8 @@ const ContactCard = () => {
       icon: <FaEnvelope className="text-[#707070] text-xl" />,
       title: "Email",
       subtitle: "Entre em contacto por email",
-      content: "Ivodasilvapedro@gmail.com",
-      link: "mailto:Ivodasilvapedro@gmail.com",
+      content: "ivodasilvapedro@gmail.com",
+      link: "mailto:ivodasilvapedro@gmail.com",
     },
     {
       icon: <FaLinkedin className="text-[#707070] text-xl" />,

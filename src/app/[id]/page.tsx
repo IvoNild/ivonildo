@@ -128,7 +128,7 @@ export default async function ProjectDetails(props: { params: Promise<{ id: stri
 
             {project.technologies && (
               <div className="mb-8">
-                <Title title="Ferramentas Utilizadas" />
+                <Title title="Ferramentas e Stack de Trabalho " />
                 <List list={project.technologies} />
               </div>
             )}

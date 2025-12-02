@@ -210,7 +210,6 @@ Em 2012, a CASA-CE entrou no cenário político como novo actor relevante:
         "Medir a rentabilidade global e por mês",
       ],
       paragraph: [
-
         {
           title: "Resultados e Insights",
           text: ``,
@@ -252,8 +251,6 @@ Em 2012, a CASA-CE entrou no cenário político como novo actor relevante:
       ],
       date: "2 de Abril de 2025",
     },
-
-
   ],
 
   "Front-End": [
@@ -267,9 +264,8 @@ Em 2012, a CASA-CE entrou no cenário político como novo actor relevante:
       fileUrl: "https://ivonildo-silva.vercel.app/", // coloca o link real aqui
       technologies: [
         "React (componentização e performance)",
-        "Next.js (optimização, imagens e routing avançado)",
+        "Next.js (optimização, imagens e routing)",
         "Tailwind CSS (design moderno e responsivo)",
-        "Framer Motion (animações suaves e micro-interacções)",
         "Figma (UI design e prototipagem)"
       ],
       paragraph: [
@@ -278,46 +274,13 @@ Em 2012, a CASA-CE entrou no cenário político como novo actor relevante:
           text: `Desenvolvi este website com foco na performance, acessibilidade e experiência do utilizador. A interface foi planeada para destacar projectos técnicos, estudos de caso e competências, com um layout limpo e profissional.`
         },
         {
-          title: "Funcionalidades Principais",
+          title: "",
           text: `
-      - Design 100% responsivo para telemóveis, tablets e desktops.<br/>
-      - Carrossel de projectos com animações suaves.<br/>
-      - Secção dinâmica de habilidades com filtros.<br/>
-      - Páginas individuais para cada projecto com detalhes completos.<br/>
-      - Modo claro/escuro totalmente funcional.<br/>
-      `
-        },
-        {
-          title: "Resultados",
-          text: `O projecto resultou numa plataforma elegante e eficiente para apresentar o meu trabalho, reforçando a minha presença profissional online e demonstrando competências em desenvolvimento front-end moderno.`
+          O projecto resultou numa plataforma elegante e eficiente para apresentar o meu trabalho, reforçando a minha presença profissional online e demonstrando competências em desenvolvimento front-end moderno.
+          `
         }
       ],
       date: "2 de Abril de 2025"
-    },
-
-
-    {
-      id: 4,
-      img: ["dashboardFinanceiro.png"],
-      title: "Chatbot com IA",
-      description:
-        "Criação de chatbot inteligente com NLP para atendimento automático de clientes em websites, com integração a CRMs.",
-      skills: ["Python", "NLP", "Dialogflow"],
-      fileUrl: "https://github.com/exemplo/chatbot",
-      technologies: [
-        "Power BI (dashboards, medidas, DAX, Power Query)",
-        "Excel (tratamento inicial e estruturação de dados)",
-        "SQL (extração e manipulação de dados)",
-        "Figma (design do dashboard base)",
-        "Python (opcional – análises adicionais ou automação)",
-      ],
-      paragraph: [
-        {
-          title: "Resultados e Insights",
-          text: `Contrary to popular belief, Lorem Ipsum is not simply random text...`,
-        },
-      ],
-      date: "2 de Abril de 2025",
     },
   ],
 
@@ -325,11 +288,11 @@ Em 2012, a CASA-CE entrou no cenário político como novo actor relevante:
     {
       id: 5,
       img: ["imgProjects/portifolio-design.png"],
-      title: "Meu Portefólio",
+      title: "UI Design - Meu Portfólio",
       description:
-        "Projecto de UI Design focado na criação do layout e identidade visual do meu portefólio profissional, garantindo uma experiência intuitiva, moderna e responsiva.",
+        "Projecto de UI Design focado na criação do layout e identidade visual do meu portfólio profissional, garantindo uma experiência intuitiva, moderna e responsiva.",
       skills: ["UI Design", "Figma", "Prototipagem"],
-      fileUrl: "https://www.figma.com/proto/7yVLKOgXmLD5dVLImEIMh4/Untitled?node-id=1-2&t=KH5jwQXXN3eIXYUf-1", // altera para o link verdadeiro
+      fileUrl: "https://www.figma.com/design/7yVLKOgXmLD5dVLImEIMh4/Untitled?node-id=1-2&p=f&t=o5xzUwhUxCHwoqjA-0", // altera para o link verdadeiro
       technologies: [
         "Figma (estruturação de layouts, criação de componentes e protótipos)",
         "Design System (cores, tipografia, espaçamentos, componentes reutilizáveis)",
@@ -339,7 +302,7 @@ Em 2012, a CASA-CE entrou no cenário político como novo actor relevante:
       paragraph: [
         {
           title: "Processo de Criação",
-          text: `O design do portefólio passou por um processo de pesquisa visual, definição de identidade, criação de wireframes e prototipagem de alta fidelidade. O objectivo foi construir uma interface limpa, profissional e focada na apresentação clara dos meus projectos.`
+          text: `O design do portfólio passou por um processo de pesquisa visual, definição de identidade, criação de wireframes e prototipagem de alta fidelidade. O objectivo foi construir uma interface limpa, profissional e focada na apresentação clara dos meus projectos.`
         }
       ],
       date: "2 de Abril de 2025"
@@ -349,15 +312,13 @@ Em 2012, a CASA-CE entrou no cenário político como novo actor relevante:
       img: ["imgProjects/farmApp-design.png"], // substitui pela imagem final do projecto
       title: "UI Design – Aplicação de Farmácia",
       description:
-        "Design completo de uma aplicação móvel para pesquisa de farmácias, catálogos de produtos, encomendas, carrinho de compras, definição de localização e navegação intuitiva.",
+        "Design completo de uma aplicação móvel para farmácias com funções de catálogos de produtos, encomendas, carrinho de compras, definição de localização e navegação intuitiva.",
       skills: ["UI Design", "Figma", "Design System", "Prototipagem"],
-      fileUrl: "https://www.figma.com/design/1aLPTGwMRSn9B4FflUfa88/FarmApp--Copy-?m=auto&fuid=1103280906314068018", // coloca o link real para o Figma
+      fileUrl: "https://www.figma.com/design/1aLPTGwMRSn9B4FflUfa88/FarmApp--Copy-?node-id=1-2&p=f&t=QwfM0HHad4ZBriLu-0", // coloca o link real para o Figma
       technologies: [
         "Figma (componentes, variantes e protótipos interativos)",
         "Design System (cores, tipografia, ícones e componentes reutilizáveis)",
         "UX Research (análise de apps semelhantes e fluxo de usabilidade)",
-        "Mapas e navegação (ecrãs de localização dinâmica)",
-        "Gestão de Produtos (catálogo, pesquisa, filtros e favoritos)"
       ],
       paragraph: [
         {
@@ -393,10 +354,10 @@ Em 2012, a CASA-CE entrou no cenário político como novo actor relevante:
       paragraph: [
         {
           title: "Sobre o Projecto",
-          text: `O objectivo do website foi criar uma presença online moderna e profissional para a ITS-LAB, destacando os seus serviços tecnológicos, portfolio de projectos, equipa e parceiros estratégicos. O design transmite confiança, inovação e clareza, alinhado com a visão da startup.`
+          text: `O objectivo do website foi criar uma presença online moderna e profissional para a ITS-LAB, destacando os seus serviços tecnológicos, portfólio de projectos, equipa e parceiros estratégicos. O design transmite confiança, inovação e clareza, alinhado com a visão da startup.`
         },
         {
-          title: "Estrutura Principal",
+          title: "",
           text: `O site inclui secções como: Página Inicial, Sobre Nós, Serviços, Projectos, Parceiros, Depoimentos, Equipa, Contactos e um blog informativo. Cada secção foi desenhada para ser objectiva e visualmente apelativa, facilitando a navegação do utilizador.`
         },
         {
@@ -406,38 +367,36 @@ Em 2012, a CASA-CE entrou no cenário político como novo actor relevante:
       ],
       date: "20 de Março de 2025"
     },
-
     {
       id: 8,
       img: ["imgProjects/belnd-design.png"],
-      title: "Website de Envio Automático de Emails",
+      title: "Protótipo UI de Sistema de Envio Automático de Emails",
       description:
-        "Plataforma web desenvolvida para automatizar envios de emails para clientes e parceiros, permitindo criar campanhas, gerir contactos e acompanhar métricas de entrega.",
-      skills: ["UI Design", "Web Design", "Automação", "UX"],
-      fileUrl: "https://www.figma.com/design/zTOiYoxYHKM3xNj2dgYytc/BlendEmail?node-id=0-1&p=f&t=JJlmqyonW01iUntn-0", // altera para o link real
+        "Protótipo de interface desenvolvido no Figma para uma plataforma de envio automático de emails, incluindo gestão de campanhas, contactos e métricas de desempenho.",
+      skills: ["UI Design", "UX Design", "Design System", "Prototipagem"],
+      fileUrl: "https://www.figma.com/design/zTOiYoxYHKM3xNj2dgYytc/BlendEmail?node-id=0-1&p=f&t=JJlmqyonW01iUntn-0",
       technologies: [
         "Figma (design de interfaces e prototipagem)",
         "Design System (componentes reutilizáveis e consistência visual)",
         "Arquitectura de Fluxos (gestão de campanhas, contactos e templates)",
-        "Dashboards (estatísticas de entregas, aberturas e cliques)",
-        "Formulários e listas (segmentação de contactos por grupos)"
       ],
       paragraph: [
         {
           title: "Sobre o Projecto",
-          text: `O website foi criado para facilitar o envio automático de emails empresariais, permitindo que equipas de marketing e atendimento configurem campanhas, definam sequências automáticas e façam gestão de contactos de forma simples e centralizada.`
+          text: `Este protótipo foi criado para representar a interface de uma plataforma de envio automático de emails empresariais, permitindo visualizar o fluxo de campanhas, sequências automáticas e gestão de contactos num ambiente organizado e intuitivo.`,
         },
         {
-          title: "Funcionalidades Principais",
-          text: `O sistema inclui criação de campanhas, editor de templates de email, gestão de listas de contactos, envio manual ou automático, segmentação por grupos, histórico de campanhas e um dashboard completo com métricas de desempenho.`
+          title: "",
+          text: `O protótipo inclui ecrãs de criação de campanhas, editor visual de templates, gestão de listas de contactos, envio manual ou automático, segmentação por grupos, histórico de envios e dashboard com métricas simuladas.`,
         },
         {
           title: "Resultados",
-          text: `A plataforma oferece uma experiência intuitiva, moderna e preparada para escalar, permitindo que empresas comuniquem de forma eficiente com clientes, parceiros e leads. O design responsivo garante um uso fluido em computadores e dispositivos móveis.`
-        }
+          text: `O design apresenta uma experiência moderna, intuitiva e escalável. A estrutura responsiva foi planejada para uso fluido, oferecendo clareza operacional para equipas de marketing e atendimento.`,
+        },
       ],
-      date: "28 de Março de 2025"
+      date: "28 de Março de 2025",
     }
+
 
 
 
