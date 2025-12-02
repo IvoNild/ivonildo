@@ -13,45 +13,177 @@ export const projectsData: Record<Category, ProjectDetails[]> = {
 
       skills: ["Power BI", "ETL", "Excel", "Funções DAX"],
 
-      fileUrl: "https://github.com/exemplo/eleicoes-angola-dashboard",
+      fileUrl: "https://app.powerbi.com/groups/me/reports/ff8108dd-6b4c-4a83-8752-6960f1cf8b6d/b19b5bbb490bc9575bd4?experience=power-bi&clientSideAuth=0",
 
       objectives: [
         "Comparar a evolução dos resultados eleitorais entre 1992 e 2012.",
         "Analisar a participação eleitoral por província e nível de participação cívica da população.",
         "Identificar tendências de crescimento e abstenção ao longo dos anos.",
-        "Criar um dashboard interactivo para facilitar a interpretação dos dados e apoie estudos."
+        "Criar um dashboard interactivo para facilitar a interpretação dos dados e apoiar estudos."
       ],
 
       paragraph: [
         {
           title: "Metodologia e Tratamento dos Dados",
+          text: `A análise foi desenvolvida a partir de dados oficiais disponibilizados pela Comissão Nacional Eleitoral (CNE) e pelo African Elections Database, abrangendo as eleições gerais de 1992, 2008 e 2012. Os conjuntos de dados incluíam: número de eleitores registados, votos válidos e inválidos, distribuição de votos por partido, resultados por província e participação eleitoral.`
+        },
+
+        {
+          title: "",
+          text: `Após a recolha, realizou-se um processo completo de ETL utilizando Excel e Power Query, onde foram executadas as seguintes etapas:`
+        },
+
+        {
+          title: "",
+          text: `--Normalização dos formatos de tabelas, garantindo uniformidade entre fontes diferentes e anos com estruturas distintas;`
+        },
+
+        {
+          title: "",
+          text: `--Tratamento de valores em falta, inconsistências numéricas e divergências entre totais declarados e totais calculados;`
+        },
+
+        {
+          title: "",
+          text: `--Integração das tabelas “Totais” e “Resultados por Província”, ajustando relacionamentos no modelo de dados do Power BI;
+          `
+        },
+
+        {
+          title: "",
+          text: `--Padronização de nomes de províncias, partidos e chaves de ligação`
+        },
+
+        {
+          title: "",
+          text: `Após a limpeza e transformação, foram criadas no Power BI diversas medidas em DAX para suportar a análise estatística, entre elas:`
+        },
+        {
+          title: "",
           text: `
-Os dados foram recolhidos a partir de relatórios oficiais da CNE, INE e outras fontes públicas. 
-Realizou-se um processo ETL no Excel e Power Query para organizar tabelas de: número de votantes, população, votos por partido, distribuição por província, género e idade.
+          --Taxa de participação eleitoral por província e por ano;
+          `
+        },
+        {
+          title: "",
+          text: `
+--Taxa de abstenção, considerando a relação entre eleitores registados e votos expressos;
+          `
+        },
+        {
+          title: "",
+          text: `
+--Percentagem de votos por partido em cada província e no total nacional;
+          `
+        },
+        {
+          title: "",
+          text: `
+--Variação percentual dos resultados entre eleições;
+          `
+        },
+        {
+          title: "",
+          text: `
+--Cálculo do partido vencedor por província;
+          `
+        },
 
-Após a limpeza e transformação dos dados, foram criadas medidas em DAX para calcular indicadores como:
-- taxa de participação eleitoral;
-- taxa de abstenção;
-- variação percentual entre eleições;
-- média de votos por partido ao longo dos anos.
+        {
+          title: "",
+          text: `--Consistência entre totais (votos por partido, válidos, inválidos e eleitorado).`
+        },
 
-O objectivo foi garantir consistência estatística entre anos com diferentes estruturas populacionais e eleitorais.
+        {
+          title: "",
+          text: `
+          O objectivo principal foi garantir um modelo coerente, comparável entre os três ciclos eleitorais e apto para análises aprofundadas, independentemente das diferenças populacionais, administrativas e metodológicas entre eleições. O resultado final permitiu construir indicadores fiáveis, validar tendências eleitorais e apoiar interpretações fundamentadas no dashboard analítico
+          `
+        },
+
+
+
+        {
+          title: "Resultados e Insights",
+          text: ``
+        },
+
+        {
+          title: "Evolução da Competitividade Eleitoral",
+          text: `Ao longo dos três ciclos eleitorais analisados (1992, 2008 e 2012), observam-se alterações relevantes na distribuição dos votos, no peso relativo dos partidos e na composição parlamentar, factores que permitem avaliar a competitividade do sistema político angolano:`
+        },
+
+        {
+          title: "",
+          text: `Observa-se que as eleições de 2008 apresentam a maior concentração de votos num único partido, com o MPLA a atingir 81,64% a nível nacional, ultrapassando significativamente os valores observados em 1992 e 2012. Este pico demonstra uma redução expressiva da competitividade interpartidária nesse ciclo eleitoral.`
+        },
+
+
+        {
+          title: "",
+          text: `O número de partidos com assentos parlamentares variou ao longo dos ciclos eleitorais, mantendo-se em quatro partidos tanto em 1992 como em 2008, mas reduzindo-se para apenas dois em 2012. Esta diminuição revela uma clara perda de diversidade política no parlamento, evidenciando uma maior concentração do poder legislativo nas duas principais forças partidárias.`
+        },
+
+
+        {
+          title: "",
+          text: `O MPLA manteve-se o partido mais votado a nível nacional nos três ciclos, obtendo 49,57% em 1992, 81,64% em 2008 e 71,85% em 2012. Em termos de assentos parlamentares, o MPLA também liderou consistentemente: 58 assentos em 1992, 84 assentos em 2008 e 81 assentos em 2012.
+`
+        },
+
+        {
+          title: "",
+          text: `A UNITA permaneceu, em todos os ciclos, o segundo partido mais votado, ainda que com forte variação nos seus resultados. Em 1992 foi particularmente competitiva, vencendo em províncias como Bié (83,94%), Huambo (81,41%), Cuando Cubango (76,28%) e Benguela (59,79%). A partir de 2008 perdeu expressão comparativa, mas manteve-se como segunda força em votos e em assentos(1992 e 2012).`
+        },
+
+        {
+          title: "",
+          text: `O PRS destacou-se em 2008 ao tornar-se segundo partido com mais assentos parlamentares, apesar de não ser o segundo mais votado, mostrando particular concentração territorial do seu eleitorado.`
+        },
+
+        {
+          title: "",
+          text: `
+Em 2012, a CASA-CE entrou no cenário político como novo actor relevante:
+*Tornou-se a 3º força mais votada a nível nacional.* -
+*Obteve o seu melhor desempenho em Cabinda, com 13,92%, revelando capacidade de captar votos sobretudo em centros urbanos específicos.*`
+        },
+
+        {
+          title: "",
+          text: `O MPLA dominou todas as províncias nas eleições de 2008 e 2012, com percentagens superiores a 60% em regiões estratégicas como Luanda, Benguela, Huíla e Cuanza Sul.`
+        },
+
+        {
+          title: "",
+          text: `A UNITA mostrou maior força territorial apenas em 1992, quando venceu várias províncias do Planalto Central.`
+        },
+
+        {
+          title: "Participação Eleitoral - Principais Tendências",
+          text: `Entre 1992 e 2012, Angola registou mudanças significativas na participação eleitoral, no comportamento dos eleitores e na dinâmica partidária: 
 `
         },
         {
-          title: "Resultados e Insights",
-          text: `
-A análise revelou padrões importantes:
-
-• **Participação eleitoral**: regista-se queda progressiva após 2008, com aumento significativo da abstenção em 2017 e 2022.  
-• **Resultados por província**: Luanda e Huíla destacam-se pela maior variação entre partidos ao longo dos anos.  
-• **Género e faixa etária**: observou-se maior participação feminina nas eleições mais recentes, enquanto jovens (18–25) apresentam menor taxa de adesão.  
-• **Indicadores socioeconómicos**: províncias com maior PIB per capita mostram maior estabilidade no comportamento eleitoral; enquanto regiões com menor desenvolvimento apresentam maior oscilação de votos.  
-• **Evolução histórica**: 1992 teve forte polarização, 2008 mostrou centralização, e 2017–2022 revelam redistribuição eleitoral com maior competitividade.
-
-O dashboard permite explorar estes indicadores de forma dinâmica, facilitando tomadas de decisão e estudos académicos.
+          title: "",
+          text: `A participação Eleitoral diminuiu de 91,2% em 1992 para 87,4% em 2008 e 62,8% em 2012, o que pode indicar uma tendência de redução do interesse dos cidadãos em participar nas eleições, especialmente em 2012, onde a queda foi mais acentuada.
 `
-        }
+        },
+        {
+          title: "",
+          text: `Apesar da queda na taxa de participação, o número total de eleitores registados aumentou consistentemente: de 4 milhões em 1992 para 8,3 milhões em 2008 e 9,8 milhões em 2012. Isto mostra que, apesar da diminuição proporcional da participação, a base eleitoral do país expandiu-se significativamente, refletindo crescimento populacional, maior capacidade administrativa de registo e maior inclusão eleitoral.
+`
+        },
+        {
+          title: "",
+          text: `O número de partidos concorrentes apresentou uma variação significativa ao longo dos três ciclos eleitorais: foram 11 partidos em 1992, aumentaram para 14 em 2008 e reduziram-se para 9 em 2012. Esta oscilação evidencia que o sistema multipartidário esteve mais aberto e diversificado nas duas primeiras eleições, mas sofreu uma redução expressiva em 2012. Tal redução pode refletir processos de fusão de coligações, desaparecimento de formações menores, dificuldades de manutenção organizacional ou mesmo uma maior concentração do eleitorado nos partidos com maior estrutura nacional.
+`
+        },
+        {
+          title: "",
+          text: `Em 2008, verificou-se uma das situações estatísticas mais relevantes: na província do Cuanza Norte, a CNE registou 141.537 eleitores inscritos, mas contabilizou 156.801 votos, resultando numa taxa de participação de 110,8%, ou seja, houve mais votos do que eleitores registados, o que constitui uma anomalia estatística grave. A CNE não apresentou explicação oficial para esta discrepância, o que levanta incoerências nos dados e fragiliza a fiabilidade do relatório oficial de 2008 nesta província.`
+        },
+
       ],
 
       technologies: [
@@ -61,7 +193,7 @@ O dashboard permite explorar estes indicadores de forma dinâmica, facilitando t
         "Figma (protótipo da interface visual do dashboard)"
       ],
 
-      date: "Actualizado em 15 de Novembro de 2025"
+      date: "Actualizado em 1 de Dezembro de 2025"
     },
     {
       id: 1,

@@ -60,7 +60,7 @@ function ProjectCard({
           className="flex items-center"
         >
           <AiOutlineFileText className="mr-2" size={16} />
-          <span className="underline text-[15px]">Ver Projeto</span>
+          <span className="underline text-[15px]">Mais Detalhes</span>
         </Link>
 
         {fileUrl && (
@@ -70,7 +70,7 @@ function ProjectCard({
             className="flex items-center"
           >
             <FaFolder className="mr-2" size={16} />
-            <span className="underline text-[15px]">Ver Arquivo</span>
+            <span className="underline text-[15px]">Ver Projecto</span>
           </Link>
         )}
       </div>
