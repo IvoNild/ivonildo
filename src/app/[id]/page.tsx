@@ -158,12 +158,12 @@ export default async function ProjectDetails(props: { params: Promise<{ id: stri
                     className="text-white text-4xl"
                   />
                   <h1 className="text-white font-bold text-[15px]">
-                    Ver Arquivo
+                    Ver Projecto
                   </h1>
                 </Link>
               )}
 
-              <Link
+              {/* <Link
                 href={"#technologySkill"}
                 className="flex gap-2 py-2 px-5 rounded-md items-center"
                 style={{ background: colors.primary }}
@@ -176,15 +176,15 @@ export default async function ProjectDetails(props: { params: Promise<{ id: stri
                 <h1 className="text-white font-bold text-[15px]">
                   Ver Projecto Online
                 </h1>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
       </div>
 
-      <div className="mt-16">
+      {/* <div className="mt-16">
         <Projects />
-      </div>
+      </div> */}
     </div>
   );
 }

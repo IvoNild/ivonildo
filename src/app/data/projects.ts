@@ -197,9 +197,9 @@ Em 2012, a CASA-CE entrou no cenário político como novo actor relevante:
     },
     {
       id: 1,
-      img: ["img_rel_financeiro/visao_geral.png"],
+      img: ["img_rel_financeiro/capa.png", "img_rel_financeiro/visao_geral.png", "img_rel_financeiro/detalhamento.png", "img_rel_financeiro/insights.png",],
       title: "Dashboard Financeiro",
-      description: "O dashboard é um Painel Financeiro que apresenta os principais Indicadores de Performance (KPIs) de um negócio ao longo de um ano.",
+      description: "O dashboard é um Painel Financeiro que apresenta os principais Indicadores de Performance (KPIs) de um negócio ao longo dos anos (2017 - 2018).",
       skills: ["Power Bi", "Power Query", "ETL", "Funções DAX"],
       fileUrl: "https://github.com/exemplo/arquivo",
       objectives: [
@@ -208,17 +208,41 @@ Em 2012, a CASA-CE entrou no cenário político como novo actor relevante:
         "Identificar onde e como o dinheiro entra",
         "Avaliar custos e despesas ao longo do ano",
         "Medir a rentabilidade global e por mês",
-        "Power Query (ETL e preparação dos dados)",
-
       ],
       paragraph: [
-        {
-          title: "Pesquisa Descritiva",
-          text: `Contrary to popular belief, Lorem Ipsum is not simply random text...`,
-        },
+
         {
           title: "Resultados e Insights",
-          text: `Contrary to popular belief, Lorem Ipsum is not simply random text...`,
+          text: ``,
+        },
+        {
+          title: "Crescimento da Receita",
+          text: `A receita apresenta um crescimento consistente ao longo do ano, com maior aceleração nos meses de outubro a dezembro. Este comportamento sugere um aumento da actividade comercial no último trimestre.`,
+        },
+        {
+          title: "Concentração de Clientes",
+          text: `A maior parte da receita é concentrada em poucos clientes. O Cliente 26 e o Cliente 9 representam juntos mais de 30% da receita anual, indicando dependência elevada destes clientes estratégicos.`,
+        }, {
+          title: "Sustentabilidade Operacional",
+          text: `95% das receitas provêm de operações principais da empresa, demonstrando um modelo de negócio sólido e sustentável, com baixa dependência de fontes externas.`,
+        }, {
+          title: "Distribuição dos Custos",
+          text: `Os custos são maioritariamente variáveis (71%), o que indica que os custos acompanham o nível de actividade. A gestão eficiente do volume de operações pode ter impacto directo no lucro.`,
+        }, {
+          title: "Meses Críticos",
+          text: `Abril e Junho registam quedas acentuadas no lucro, resultando em valores negativos. Estes meses exigem investigação adicional para identificação das causas — seja baixa demanda, aumento pontual de custos, ou despesas extraordinárias.`,
+        }, {
+          title: "Recuperação nos Meses Finais",
+          text: `A partir de Agosto observa-se uma melhoria contínua no lucro, culminando em fortes desempenhos nos meses de Outubro, Novembro e Dezembro. Isto reflecte maior eficiência operacional ou aumento significativo da receita no período.`,
+        }, {
+          title: "Rentabilidade Anual",
+          text: `Apesar dos meses críticos, a empresa encerra o ano com lucro positivo de 3,94 M Kz, mostrando resiliência financeira e capacidade de recuperação.`,
+        }, {
+          title: "Oportunidade de Expansão",
+          text: `A receita proveniente de pequenos clientes é baixa, criando oportunidade para projectar estratégias de expansão e diversificação da base de clientes.`,
+        }, {
+          title: "Custos Elevados VS Lucro Baixo",
+          text: `A empresa gerou 44 M Kz, mas reteve apenas 3,94 M Kz de lucro (margem de 8,8%). Isto indica que a estrutura de custos e despesas consome cerca de 91% da receita, o que significa que a empresa lucra pouco em relação ao que fatura.`,
         },
       ],
       technologies: [
@@ -235,27 +259,42 @@ Em 2012, a CASA-CE entrou no cenário político como novo actor relevante:
   "Front-End": [
     {
       id: 3,
-      img: ["capa.png"],
-      title: "Loja Online",
+      img: ["imgProjects/portifolio-front-end-capa.png"],
+      title: "Website Front-End — Portfólio Profissional",
       description:
-        "Sistema completo de e-commerce com carrinho de compras, gestão de stock e integração com pagamentos online.",
-      skills: ["React", "Node.js", "MongoDB"],
-      fileUrl: "https://github.com/exemplo/chatbot",
+        "Website moderno, rápido e responsivo desenvolvido para apresentar projectos, habilidades e experiência de forma clara e visualmente atractiva.",
+      skills: ["React", "Next.js", "Tailwind CSS"],
+      fileUrl: "https://ivonildo-silva.vercel.app/", // coloca o link real aqui
       technologies: [
-        "Power BI (dashboards, medidas, DAX, Power Query)",
-        "Excel (tratamento inicial e estruturação de dados)",
-        "SQL (extração e manipulação de dados)",
-        "Figma (design do dashboard base)",
-        "Python (opcional – análises adicionais ou automação)",
+        "React (componentização e performance)",
+        "Next.js (optimização, imagens e routing avançado)",
+        "Tailwind CSS (design moderno e responsivo)",
+        "Framer Motion (animações suaves e micro-interacções)",
+        "Figma (UI design e prototipagem)"
       ],
       paragraph: [
         {
-          title: "Resultados e Insights",
-          text: `Contrary to popular belief, Lorem Ipsum is not simply random text...`,
+          title: "Sobre o Projecto",
+          text: `Desenvolvi este website com foco na performance, acessibilidade e experiência do utilizador. A interface foi planeada para destacar projectos técnicos, estudos de caso e competências, com um layout limpo e profissional.`
         },
+        {
+          title: "Funcionalidades Principais",
+          text: `
+      - Design 100% responsivo para telemóveis, tablets e desktops.<br/>
+      - Carrossel de projectos com animações suaves.<br/>
+      - Secção dinâmica de habilidades com filtros.<br/>
+      - Páginas individuais para cada projecto com detalhes completos.<br/>
+      - Modo claro/escuro totalmente funcional.<br/>
+      `
+        },
+        {
+          title: "Resultados",
+          text: `O projecto resultou numa plataforma elegante e eficiente para apresentar o meu trabalho, reforçando a minha presença profissional online e demonstrando competências em desenvolvimento front-end moderno.`
+        }
       ],
-      date: "2 de Abril de 2025",
+      date: "2 de Abril de 2025"
     },
+
 
     {
       id: 4,
