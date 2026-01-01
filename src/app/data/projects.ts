@@ -195,6 +195,136 @@ Em 2012, a CASA-CE entrou no cenário político como novo actor relevante:
 
       date: "Actualizado em 1 de Dezembro de 2025"
     },
+
+
+    {
+  id: 3,
+  img: [
+    "img_rel_financas/Dashboard Finanças Pessoais.png",
+  ],
+
+  title: "Dashboard de Finanças Pessoais (Excel)",
+
+  description:
+    "Dashboard interactivo desenvolvido em Excel para controlo e análise de finanças pessoais, permitindo acompanhar receitas, despesas, saldo mensal e distribuição de gastos por categoria ao longo do tempo.",
+
+  skills: [
+    "Excel Avançado",
+    "Dashboards",
+    "Análise Financeira",
+    "Modelação de Dados",
+    "Visualização de Dados"
+  ],
+
+  fileUrl: "/img_rel_financas/10-02 - Dashboard Finanças Pessoais.xlsx",
+
+  objectives: [
+    "Monitorizar receitas, despesas e saldo mensal de forma clara e visual.",
+    "Analisar a distribuição das despesas por categoria (moradia, saúde, transporte, subsistência, lazer e vestuário).",
+    "Identificar padrões de consumo e meses com maior pressão financeira.",
+    "Apoiar a tomada de decisões financeiras pessoais através de indicadores visuais."
+  ],
+
+  paragraph: [
+    {
+      title: "Metodologia e Tratamento dos Dados",
+      text: `O dashboard foi desenvolvido a partir de registos financeiros pessoais organizados em Excel, incluindo receitas mensais, despesas detalhadas e categorias de gastos. Os dados foram estruturados por ano, mês e tipo de movimento (receita ou despesa), permitindo análises temporais e comparativas.`
+    },
+
+    {
+      title: "",
+      text: `O processo de preparação dos dados incluiu as seguintes etapas:`
+    },
+
+    {
+      title: "",
+      text: `--Estruturação das tabelas de receitas e despesas, garantindo consistência entre meses e anos;`
+    },
+
+    {
+      title: "",
+      text: `--Classificação das despesas por categorias financeiras (moradia, saúde, subsistência, transporte, lazer e vestuário);`
+    },
+
+    {
+      title: "",
+      text: `--Validação de totais mensais e anuais para evitar discrepâncias nos valores apresentados;`
+    },
+
+    {
+      title: "",
+      text: `--Criação de colunas auxiliares para cálculo automático de saldo mensal e acumulado.`
+    },
+
+    {
+      title: "",
+      text: `Após a organização dos dados, foram utilizados recursos avançados do Excel para a análise:`
+    },
+
+    {
+      title: "",
+      text: `--Cálculo do saldo mensal com base na diferença entre receitas e despesas;`
+    },
+
+    {
+      title: "",
+      text: `--Percentagem de participação de cada categoria de despesa no total mensal e anual;`
+    },
+
+    {
+      title: "",
+      text: `--Comparação entre receitas e despesas ao longo dos meses;`
+    },
+
+    {
+      title: "",
+      text: `--Análise da evolução financeira mensal através de gráficos de linha e colunas.`
+    },
+
+    {
+      title: "",
+      text: `O objectivo foi construir um dashboard intuitivo, interactivo e visualmente equilibrado, capaz de fornecer uma visão clara da saúde financeira pessoal e facilitar o acompanhamento contínuo das finanças.`
+    },
+
+    {
+      title: "Resultados e Insights",
+      text: `O dashboard permite extrair diversos insights financeiros relevantes:`
+    },
+
+    {
+      title: "",
+      text: `É possível identificar meses com maior volume de despesas, permitindo avaliar períodos de maior pressão financeira e possíveis excessos de consumo.`
+    },
+
+    {
+      title: "",
+      text: `A análise por categoria evidencia quais áreas concentram a maior parte dos gastos, destacando despesas fixas (como moradia e saúde) em comparação com despesas variáveis (como lazer e vestuário).`
+    },
+
+    {
+      title: "",
+      text: `A comparação entre receitas e despesas ao longo do ano permite avaliar a sustentabilidade financeira e identificar meses com saldo positivo ou negativo.`
+    },
+
+    {
+      title: "",
+      text: `Os indicadores de participação anual facilitam a percepção do peso relativo de cada categoria no orçamento total, apoiando ajustes e planeamento financeiro futuro.`
+    }
+  ],
+
+  technologies: [
+    "Microsoft Excel (tabelas dinâmicas, fórmulas e gráficos)",
+    "Análise financeira pessoal",
+    "Visualização de dados",
+    "Design de dashboards"
+  ],
+
+  date: "Actualizado em Dezembro de 2025"
+},
+
+
+
+
     {
       id: 1,
       img: ["img_rel_financeiro/capa.png", "img_rel_financeiro/visao_geral.png", "img_rel_financeiro/detalhamento.png", "img_rel_financeiro/insights.png",],
